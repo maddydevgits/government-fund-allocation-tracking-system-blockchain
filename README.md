@@ -1,4 +1,4 @@
-# government-fund-allocation-tracking-system-blockchain
+# Project Name
 Official Repo for Government Fund Allocation and Tracking System
 
 # Softwares

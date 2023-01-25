@@ -1,0 +1,69 @@
+<html>
+<head>
+    <title>
+        Dashboard Page | Government Funds Allocation and Tracking System
+    </title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <style>
+        .center {
+            display:block;
+  text-align: left;
+  border: 3px solid green;
+}
+.container {
+    /* remember to set a width */
+    margin-right: auto;
+    margin-left: auto;
+}
+</style>
+</head>
+<body bgcolor="OldLace">
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <a class="navbar-brand" href="#">Demo</a>
+          </div>
+          <ul class="nav navbar-nav">
+            <li><a href="/newdesc">Home</a></li>
+            <li class="active"><a href="/allocatefund">Allocate Fund</a></li>
+            <li><a href="/tracking">Tracking Funds</a></li>
+            <li><a href="/logout">Logout</a></li>
+          </ul>
+        </div>
+    </nav>
+    <br/><br/>
+    <div class="container col-md-4"></div>
+    <div class="container col-md-4 center">
+        <h1 ALIGN="center"><u>Allocate Funds</u></h1>
+        <form action="/allocatefundform" method="post">
+            <div class="form-group">
+                <label for="name">Enter Department:</label>
+                <input type="text" class="form-control" id="name" placeholder="Enter Department" name="department">
+            </div>
+            <div class="form-group">
+                <label for="name">Enter Sender Wallet:</label>
+                <input type="text" class="form-control" id="name" placeholder="Enter Sender Wallet Address" name="sender">
+            </div>
+            <div class="form-group">
+                <label for="name">Enter Receiver Wallet:</label>
+                <input type="text" class="form-control" id="name" placeholder="Enter Receiver Wallet Address" name="receiver">
+            </div>
+            <div class="form-group">
+                <label for="name">Enter Amount:</label>
+                <input type="text" class="form-control" id="name" placeholder="Enter Amount" name="amount">
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Allocate Fund" />
+            </div>
+        </form>
+        <span style="color: green;">
+            {{res}}
+        </span>
+        <br/><br/>
+    </div>
+    </body>
+    </html>

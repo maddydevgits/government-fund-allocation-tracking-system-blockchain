@@ -1,0 +1,60 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <style>
+        .center {
+            display:block;
+  text-align: left;
+  border: 3px solid green;
+}
+.container {
+    /* remember to set a width */
+    margin-right: auto;
+    margin-left: auto;
+}
+    </style>
+</head>
+<body bgcolor="OldLace">
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <a class="navbar-brand" href="#">Demo</a>
+          </div>
+          <ul class="nav navbar-nav">
+            <li><a href="/">Home</a></li>
+            <li><a href="/registration">Register</a></li>
+            <li class="active"><a href="/login">Login</a></li>
+            <li><a href="/publictracking">Tracking Funds</a></li>
+          </ul>
+        </div>
+    </nav>
+    <br/><br/>
+    <div class="container col-md-4"></div>
+    <div class="container col-md-4 center">
+        <br/><br/>
+    <h1 ALIGN="center"><u>Login PAGE</u></h1>
+    <form action="/loginuser" method="post">
+    <div class="form-group">
+        <label for="name">Username:</label>
+        <input type="text" class="form-control" id="name" placeholder="Enter Wallet Address" name="username">
+    </div>
+    
+    <div class="form-group">
+        <label for="name">Password:</label>
+        <input type="password" class="form-control" id="password" placeholder="Enter Password" name="password">
+    </div>
+    <div class="form-group">
+        <input type="submit" value="Login" />
+    </div>
+    <br/><br/>
+    </form>
+    <span style="color: red;">{{err}}</span>
+    </div>
+
+</center>
+</body>
+</html>
